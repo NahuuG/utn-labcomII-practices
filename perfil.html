@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color:black; 
+            color: #353434; 
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Perfil y Datos personales</h1>
+    <p>Por favor le pedimos que introduzca sus datos como (nombre, correo electronico, edad, nacionalidad, condicion laboral).<br>
+        !Muchas gracias
+    </p>
+    <fieldset >
+        <form action="formulario">
+            <legend id="titulo">ESTUDIANTES</legend>
+            <label for="nombre"></label>
+            <input type="text" placeholder="Nombre Completo">
+            <label for="email"></label>
+            <input type="text" placeholder="Correo electronico">
+            <label for="edad"></label>
+            <input type="number" placeholder="Edad"> 
+            <label for="pais"></label>
+            <select id="paises" name="pais">
+                <option value="argentina">Argentina</option>
+                <option value="brasil">Brasil</option>
+                <option value="chile">Chile</option>
+                <option value="mexico">Uruguay</option>
+            </select>
+            <select id="condicionLaboral" name="laboral"> 
+                <option value="argentina">Desempleado</option>
+                <option value="brasil">En Busqueda </option>
+                <option value="chile">Par Time</option>
+                <option value="mexico">Full Time</option>
+            </select>
+            <hr>
+            <label for="soloLectura">Gustos Personales</label><br>
+            <label for="musica"></label>
+            <input type="text" placeholder="Gustos Musicales">
+            <select name="comidas" id="comidas">
+                <option value="pastas">Pastas</option> Pasta, pizza, risotto, lasaña, tiramisú
+                <option value="pizza">Pizza</option>
+                <option value="risoto">Risoto</option>
+                <option value="lasaña">Lasaña</option>
+                <option value="tiramisu">Tiramisú</option>
+            </select>
+            <label> ¿Guardar datos?
+                <input type="radio" name="opcion" value="opcion1"> si
+                <input type="radio" name="opcion" value="opcion2"> no
+            </label>
+            <button>Enviar</button>
+        </form>
+    </fieldset>
+</body>
+</html>
